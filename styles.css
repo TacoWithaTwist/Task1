@@ -10,6 +10,13 @@
 a {
   text-decoration: none;
   color: #686868;
+  height: 100%;
+  width: 100%;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: black;
+  text-decoration: underline;
 }
 body {
   font-family: Arial, sans-serif;
@@ -27,23 +34,28 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5em;
+  gap: 3em;
 }
 ul {
   list-style-type: none;
 }
 
+.svg {
+  width: 24px;
+}
 /* Nav styles */
 nav {
   display: flex;
   justify-content: space-between;
   gap: 15em;
 }
-
 .right > ul {
   display: flex;
   justify-content: center;
   gap: 3em;
+}
+.right > ul > li > a {
+  font-weight: 600;
 }
 
 /* Introduction styles */
@@ -56,28 +68,38 @@ nav {
 }
 .idContainer {
   display: flex;
-
   gap: 8em;
   width: 100%;
 }
 .nameAndTitleContainer {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .picture > img {
-  width: 50px;
-  border-radius: 50px;
+  width: 125px;
+  border-radius: 100px;
 }
+.name {
+  font-weight: 600;
+}
+.title > span {
+  font-size: 0.9em;
+}
+/* Contact Styling */
 
 .contactButton {
   width: 100%;
   padding: 10px;
-  margin: 15px;
+  margin: 15px 15px 15px 0px;
   border-style: solid;
   border-width: 0.01em;
   border-radius: 0.3em;
   border-color: #d1cfcf;
   background-color: white;
+  display: flex;
+  gap: 9px;
 }
-.contactButton > ul > li {
-  color: #686868;
-}
+
+/* Projects Styling */
