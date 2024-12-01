@@ -113,8 +113,9 @@ nav {
 }
 
 /* Projects Styling */
+
 .project {
-  margin: 20px;
+  margin: 20px 0 20px 0;
   padding: 20px;
   border: #d1cfcf 1px solid;
   border-radius: 1%;
@@ -128,4 +129,31 @@ nav {
 .projectScreenShot > img {
   width: 50vw;
   border-radius: 1%;
+}
+
+.projectDescription > span {
+  display: block;
+  font-size: 0.85em;
+}
+
+.projectDescription > a {
+  color: black;
+  text-decoration: underline;
+}
+/* Skills Styling */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.lang {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border: #d1cfcf 1px solid;
+  border-radius: 1%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
 }
