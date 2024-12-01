@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 a {
   text-decoration: none;
@@ -18,6 +18,10 @@ a:hover {
   color: black;
   text-decoration: underline;
 }
+h2 {
+  color: black;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -80,11 +84,16 @@ nav {
 .picture > img {
   width: 125px;
   border-radius: 100px;
+  border: 2px solid #686868;
 }
 .name {
+  color: black;
   font-weight: 600;
 }
 .title > span {
+  font-size: 0.9em;
+}
+.description > span {
   font-size: 0.9em;
 }
 /* Contact Styling */
@@ -100,6 +109,23 @@ nav {
   background-color: white;
   display: flex;
   gap: 9px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 /* Projects Styling */
+.project {
+  margin: 20px;
+  padding: 20px;
+  border: #d1cfcf 1px solid;
+  border-radius: 1%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.technologies > ul > li {
+  display: flex;
+  gap: 10px;
+}
+.projectScreenShot > img {
+  width: 50vw;
+  border-radius: 1%;
+}
