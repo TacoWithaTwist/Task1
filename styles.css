@@ -7,7 +7,10 @@
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.1rem;
 }
-
+a {
+  text-decoration: none;
+  color: #686868;
+}
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -16,7 +19,7 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 5em;
-  color: #333;
+  color: #686868;
   padding: 20px;
 }
 main {
@@ -44,3 +47,37 @@ nav {
 }
 
 /* Introduction styles */
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  gap: 3em;
+}
+.idContainer {
+  display: flex;
+
+  gap: 8em;
+  width: 100%;
+}
+.nameAndTitleContainer {
+  text-align: left;
+}
+.picture > img {
+  width: 50px;
+  border-radius: 50px;
+}
+
+.contactButton {
+  width: 100%;
+  padding: 10px;
+  margin: 15px;
+  border-style: solid;
+  border-width: 0.01em;
+  border-radius: 0.3em;
+  border-color: #d1cfcf;
+  background-color: white;
+}
+.contactButton > ul > li {
+  color: #686868;
+}
