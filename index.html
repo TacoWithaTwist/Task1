@@ -5,90 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <nav>
-      <div class="left"><span>hmsallem</span></div>
+      <div class="left"><span id="logo">hmsallem</span></div>
       <div class="right">
-        <ul>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="https://www.facebook.com/IsammMicrosoftClub">IMC</a></li>
-        </ul>
+        <button id="themeButton">Change Theme</button>
       </div>
     </nav>
     <main>
-      <section class="introduction">
-        <div class="idContainer">
-          <div class="picture">
-            <img src="./ahla.jpeg" alt="Picture here" />
-          </div>
-          <div class="nameAndTitleContainer">
-            <div class="name"><span>Houssein Msallem</span></div>
-            <div class="title"><span>Junior Developer</span></div>
-          </div>
-        </div>
-
-        <div class="description">
-          <span
-            >I am a web developer and computer science student located in
-            <b><em> Borj Cedria, Tunisia</em></b
-            >.</span
-          >
-        </div>
-      </section>
       <div class="contentContainer">
-        <section class="contactList">
-          <h2><b>Contact Me!</b></h2>
-          <ul class="contactButtonContainer">
-            <li class="contactButton">
-              <img src="./mail-alt-svgrepo-com.svg" class="svg" alt="#" />
-              <span> houssein.msallem@gmail.com </span>
-            </li>
-            <li class="contactButton">
-              <img src="./github-svgrepo-com.svg" class="svg" alt="" />
-              <a href="https://github.com/housseinmsallem">Github</a>
-            </li>
-            <li class="contactButton">
-              <img src="./linkedin-svgrepo-com.svg" class="svg" alt="" />
-              <a href="https://linkedin.com/in/hmsallem">LinkedIn</a>
-            </li>
-          </ul>
+        <section class="introduction">
+          <div class="idContainer">
+            <div class="container">
+              <div class="picture">
+                <img src="./ahla.jpeg" alt="Picture here" />
+              </div>
+              <div class="description">
+                <span
+                  >I am <span class="colorIt">Houssein Msallem</span> a Junior
+                  Web developer and computer science student located in
+                  Tunisia.</span
+                >
+              </div>
+            </div>
+
+            <section class="contactList">
+              <h2>Contact Me!</h2>
+              <ul class="contactButtonContainer">
+                <li class="contactButton">
+                  <a>
+                    <img src="./mail-alt-svgrepo-com.svg" class="svg" alt="#" />
+                  </a>
+                </li>
+                <li class="contactButton">
+                  <a href="https://github.com/housseinmsallem"
+                    ><img src="./github-svgrepo-com.svg" class="svg" alt=""
+                  /></a>
+                </li>
+                <li class="contactButton">
+                  <a href="https://linkedin.com/in/hmsallem"
+                    ><img src="./linkedin-svgrepo-com.svg" class="svg" alt=""
+                  /></a>
+                </li>
+                <li class="contactButton">
+                  <a href="https://linkedin.com/in/hmsallem"
+                    ><img src="./linkedin-svgrepo-com.svg" class="svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </section>
+          </div>
         </section>
         <section id="projects" class="projects">
-          <h2><b>Projects :</b></h2>
-          <ul>
+          <ul class="projectsContainer">
             <li>
               <div class="project">
                 <div class="projectScreenShot">
                   <img src="./image.png " alt="" />
                 </div>
                 <div class="projectContent">
-                  <h2>IM Courses</h2>
                   <div class="projectDescription">
-                    <span
-                      >A platform for IM students to easily access their
-                      curriculum.</span
+                    <h2>Memory Card Game</h2>
+                    <span>A simple memory card game.</span>
+                    <a
+                      href="https://memory-houss.netlify.app"
+                      class="projectLink"
+                      target="_blank"
                     >
-                    <a href="https://memory-houss.netlify.app"
-                      >Link to Project</a
-                    >
+                      Link to Project
+                    </a>
                   </div>
                   <div class="technologies">
-                    <h4>Technologies</h4>
+                    <h2>Technologies</h2>
                     <ul>
                       <li>
                         <img
                           src="./react-16-svgrepo-com.svg"
                           alt=""
-                          class="svg"
+                          class="svgTech"
                         /><span>React</span>
                       </li>
                       <li>
                         <img
                           src="./typescript-16-svgrepo-com.svg"
                           alt=""
-                          class="svg"
+                          class="svgTech"
+                        /><span>Typescript</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="project">
+                <div class="projectScreenShot">
+                  <img src="./screen.png " alt="" />
+                </div>
+                <div class="projectContent">
+                  <div class="projectDescription">
+                    <h2>IM Courses</h2>
+                    <span
+                      >A platform for IM students to easily access their
+                      curriculum.</span
+                    >
+                    <a
+                      target="_blank"
+                      class="projectLink"
+                      href="https://isammcours.netlify.app"
+                      >Link to Project</a
+                    >
+                  </div>
+                  <div class="technologies">
+                    <h2>Technologies</h2>
+                    <ul>
+                      <li>
+                        <img
+                          src="./react-16-svgrepo-com.svg"
+                          alt=""
+                          class="svgTech"
+                        /><span>React</span>
+                      </li>
+                      <li>
+                        <img
+                          src="./typescript-16-svgrepo-com.svg"
+                          alt=""
+                          class="svgTech"
                         /><span>Typescript</span>
                       </li>
                     </ul>
@@ -99,8 +143,7 @@
           </ul>
         </section>
         <section id="skills" class="skills">
-          <h2>Skills:</h2>
-          <ul>
+          <ul class="skillsContainer">
             <li>
               <div class="lang">
                 <img
