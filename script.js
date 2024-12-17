@@ -2,6 +2,8 @@ const themes = [
   { mainColor: ' #2b303a', accentColor: '#92dce5', secondaryColor: 'white' },
   { mainColor: ' #F2FF49', accentColor: '#FF4242', secondaryColor: 'black' },
   { mainColor: ' #502419', accentColor: '#7EA172', secondaryColor: 'white' },
+  { mainColor: ' #D30C7B', accentColor: '#FFE3DC', secondaryColor: 'white' },
+  { mainColor: ' #6E2594', accentColor: '#ECD444', secondaryColor: 'white' },
 ];
 function handleTheme() {
   const themeButton = document.getElementById('themeButton');
